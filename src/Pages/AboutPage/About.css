@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.AboutPage-Container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/src/Assets/bjark-DZ975EkUJH0-unsplash.jpg");
+    background-position: top;
+}
+
+.Navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(11, 11, 11, 0.333);
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+
+.Navbar-LeftContent {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.Navbar-RightContent {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.Navbar-Input {
+    width: 55%;
+    height: 55%;
+    padding-left: 10px;
+    background-color: rgba(150, 146, 146, 0.333);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+
+.Search-Button {
+    width: 30%;
+    height: 55%;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    font-size: 18px;
+    border: 1px solid transparent;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+
+.AboutPage-SubContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Temp-Card {
+    width: 25%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292e2c;
+    padding: 20px;
+    background: rgba(120, 120, 120, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(52, 48, 48);
+
+}
+
+.CityName {
+    font-size: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.Temp {
+    font-size: 35px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.other-Information {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.para {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
