@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 480px) {
     .HomePage-MainContainer {
-        height: 90vh;
+        height: 95vh;
     }
 
     .HomePage-WeatherContainer {
