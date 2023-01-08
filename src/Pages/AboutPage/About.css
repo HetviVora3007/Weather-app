@@ -117,6 +117,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .AboutPage-Container {
+        height: 90vh;
+    }
+
     .Navbar-LeftContent {
         width: 20%;
         font-size: 14px;
