@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Home.css'
-import HomePageImage from '../../Assets/6012764.jpg'
+
 const Home = () => {
     return (
         <>
@@ -13,8 +14,8 @@ const Home = () => {
                     <div className='Sub-Contain'>
                         <p>Easy step to predict the weather and make your day easier</p>
                     </div>
-                    <div className='Container-Button'>
-                        <button>Get Start</button>
+                    <div className='Link-Container'>
+                        <Link className='link' to={"/about"}>Get Start</Link>
                     </div>
                 </div>
             </div>

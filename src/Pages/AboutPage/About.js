@@ -65,8 +65,6 @@ const About = () => {
                                         <p>Grnd Level - {weatherData.main.grnd_level}</p>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </>

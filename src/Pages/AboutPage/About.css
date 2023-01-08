@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 .AboutPage-Container {
     height: 100vh;
     width: 100%;
-    background-image: url("/src/Assets/bjark-DZ975EkUJH0-unsplash.jpg");
+    background-image: url("/src/Assets/AboutPageImg.jpg");
     background-position: top;
 }
 
@@ -20,6 +19,7 @@
     background-color: rgba(11, 11, 11, 0.333);
     font-family: "Lucida Console", "Courier New", monospace;
     color: white;
+    animation: fadeInBottom 1s
 }
 
 .Navbar-LeftContent {
@@ -60,6 +60,11 @@
     color: white;
 }
 
+.Search-Button:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
 .AboutPage-SubContainer {
     width: 100%;
     height: 90%;
@@ -84,7 +89,7 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     color: rgb(52, 48, 48);
-
+    animation: fadeInBottom 1s
 }
 
 .CityName {
@@ -108,4 +113,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeInBottom 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+    .Navbar-LeftContent {
+        width: 20%;
+        font-size: 14px;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    .Navbar-RightContent {
+        width: 57%;
+    }
+
+    .Navbar-Input {
+        width: 50%;
+    }
+
+    .Temp-Card {
+        width: 75%;
+        height: 37%;
+        color: black;
+    }
+
+    .Search-Button:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
 }

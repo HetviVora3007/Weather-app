@@ -10,45 +10,100 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/src/Assets/25503.jpg');
-    background-size: cover;
+    background-image: url("/src/Assets/AboutPageImg.jpg");
+    background-position: top;
+    animation: fadeInBottom 1.5s;
 }
 
 .HomePage-WeatherContainer {
-    width: 40%;
+    width: 37%;
     height: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background: rgba(120, 120, 120, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(52, 48, 48);
+    color: black;
+    font-size: 18px;
+    outline: none;
+    animation: fadeInBottom 1s;
 }
 
 .Main-Contain {
     width: 83%;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 .Sub-Contain {
     width: 95%;
-    font-size: 25px;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Container-Button {
+.Link-Container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Container-Button button {
-    width: 20%;
+.link {
+    width: 15%;
     padding: 18px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 19px;
     background-color: transparent;
+    transition: 0.4s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1.8px solid black;
+}
+
+.Link-Container :hover {
+    transform: scale(1.1);
     transition: 0.4s;
 }
 
-.Container-Button :hover {
-    background-color: #add0d5;
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .HomePage-WeatherContainer {
+        width: 80%;
+        height: 60%;
+    }
+
+    .Sub-Contain {
+        width: 98%;
+        margin-left: 60px;
+    }
+
+    .link {
+        width: 30%;
+    }
+
+    .Link-Container :hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
 }
